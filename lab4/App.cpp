@@ -5,13 +5,30 @@
 using namespace std;
 int main()
 {
+	/*
+	name = NULL;
+	numberOfSeries = 0;
+	numberOfReps = 0;
+	weightKg = 0;*/
 	int ok = 1,serii,reps,kg,optiune,x,lungime;
 	char nume[20];
 	Repository rep;
 	GymExercise filtru[20];
+	GymExercise s1("Model 1", 3, 4, 5);
+	GymExercise s2("test2", 2, 1, 3);
+	GymExercise s3("test3", 2, 5, 3);
+	GymExercise s4("test4", 0, 1, 0);
+	rep.addElem(s1);
+	rep.addElem(s2);
+	rep.addElem(s3);
+	rep.addElem(s4);
 	cout << "Teste" << endl;
-	testFiltrareX();
-	testStergere5();
+	void testFiltrareX();
+	void testStergere5();
+	void testAdaugare();
+	void testStergere();
+	void testCautare();
+	void testupdate();
 	cout << "Teste trecute" << endl;
 	while (ok)
 	{
@@ -28,7 +45,8 @@ int main()
 			cout <<endl<< "Greutate:";
 			cin >> kg;
 			cout << endl;
-			rep.addElem(GymExercise(nume, serii, reps, kg));
+			GymExercise g(nume, serii, reps, kg);
+			rep.addElem(g);
 			continue;
 		}
 		if (optiune == 2)

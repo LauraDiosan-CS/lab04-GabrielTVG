@@ -1,2 +1,16 @@
-﻿  Teste.cpp
-  lab4.vcxproj -> D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Debug\lab4.exe
+﻿  App.cpp
+  Service.cpp
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(4,1): error C2600: 'Service::Service': cannot define a compiler-generated special member function (must be declared in the class first)
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(8,15): error C2039: 'adaugareElement': is not a member of 'Service'
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.h(4): message : see declaration of 'Service'
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(10,2): error C2065: 'rep': undeclared identifier
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(13,15): error C2039: 'filtrareDupaX': is not a member of 'Service'
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.h(4): message : see declaration of 'Service'
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(15,12): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(15,2): error C3861: 'filtrareX': identifier not found
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(18,15): error C2039: 'stergereDupa5': is not a member of 'Service'
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.h(4): message : see declaration of 'Service'
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(20,12): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+D:\Facultate\Anul 1\Semestrul2\Laburi\lab4\Service.cpp(20,2): error C3861: 'stergere5': identifier not found
+  Teste.cpp
+  Generating Code...
