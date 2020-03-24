@@ -2,26 +2,27 @@
 #include "Operation.h"
 #include "Repository.h"
 #include "Teste.h"
+#include "Service.h"
+#include "UI.h"
 using namespace std;
 int main()
 {
-	/*
-	name = NULL;
-	numberOfSeries = 0;
-	numberOfReps = 0;
-	weightKg = 0;*/
-	int ok = 1,serii,reps,kg,optiune,x,lungime;
-	char nume[20];
-	Repository rep;
+	int ok = 1, optiune;
+	Service ser;
+	UI ui;
 	GymExercise filtru[20];
 	GymExercise s1("Model 1", 3, 4, 5);
-	GymExercise s2("test2", 2, 1, 3);
-	GymExercise s3("test3", 2, 5, 3);
-	GymExercise s4("test4", 0, 1, 0);
-	rep.addElem(s1);
-	rep.addElem(s2);
-	rep.addElem(s3);
-	rep.addElem(s4);
+	GymExercise s2("Model 2", 2, 1, 3);
+	GymExercise s3("Model 3", 2, 5, 3);
+	GymExercise s4("Model 4", 0, 1, 0);
+	//rep.addElem(s1);
+	//rep.addElem(s2);
+	//rep.addElem(s3);
+	//rep.addElem(s4);
+	ser.adaugareElement(s1);
+	ser.adaugareElement(s2);
+	ser.adaugareElement(s3);
+	ser.adaugareElement(s4);
 	cout << "Teste" << endl;
 	void testFiltrareX();
 	void testStergere5();
@@ -36,35 +37,22 @@ int main()
 		cin >> optiune;
 		if (optiune == 1)
 		{
-			cout <<endl<< "Nume exercitiu: ";
-			cin >> nume;
-			cout <<endl<< "Numar de serii:";
-			cin >> serii;
-			cout <<endl<< "Numar of reps:";
-			cin >> reps;
-			cout <<endl<< "Greutate:";
-			cin >> kg;
-			cout << endl;
-			GymExercise g(nume, serii, reps, kg);
-			rep.addElem(g);
+			ui.adaugareExercitiu();
 			continue;
 		}
 		if (optiune == 2)
 		{
-			cout << endl << "Data viitoare afisare, nu avem inca... -_-" << endl;
+			ui.afisareExercitii();
 			continue;
 		}
 		if (optiune == 3)
 		{
-			cout <<endl<<"Citire X:";
-			cin >> x;
-			filtrareX(rep, x, filtru, lungime);
-			cout << endl << "Afisare nu avem inca... -_-" << endl;
+			ui.filtrareDupaXUI();
 			continue;
 		}
 		if (optiune == 4)
 		{
-			stergere5(rep);
+			ui.stergereDupa5UI();
 			continue;
 		}
 		if (optiune == 5)

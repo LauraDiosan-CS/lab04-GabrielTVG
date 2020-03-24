@@ -16,5 +16,4 @@ public:
 	GymExercise* getAll();
 	int dim();
 	~Repository();
-
 };

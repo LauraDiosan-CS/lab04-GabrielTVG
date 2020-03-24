@@ -141,14 +141,18 @@
     <ClInclude Include="..\Exercitii.h" />
     <ClInclude Include="..\Operation.h" />
     <ClInclude Include="..\Repository.h" />
+    <ClInclude Include="..\Service.h" />
     <ClInclude Include="..\Teste.h" />
+    <ClInclude Include="..\UI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\App.cpp" />
     <ClCompile Include="..\Exercitii.cpp" />
     <ClCompile Include="..\Operation.cpp" />
     <ClCompile Include="..\Repository.cpp" />
+    <ClCompile Include="..\Service.cpp" />
     <ClCompile Include="..\Teste.cpp" />
+    <ClCompile Include="..\UI.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
