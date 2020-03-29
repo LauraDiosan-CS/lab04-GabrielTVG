@@ -6,6 +6,11 @@ class Service
 {
 private:
 	Repository rep;
+	typedef void(Service::* Undo)(GymExercise g);
+	//using Undo = void(Service::*)();
+	//void(Service::* undo[30])();
+	Undo undo[30];
+	int pozitie;
 public:
 	Service();
 	void adaugareElement(const GymExercise& g);

@@ -9,6 +9,7 @@ public:
 	UI();
 	void adaugareExercitiu();
 	void afisareExercitii();
+	void updateExercitiu();
 	void filtrareDupaXUI();
 	void stergereDupa5UI();
 	~UI();

@@ -3,7 +3,9 @@
 
 Service::Service()
 {
-
+	GymExercise g;
+	pozitie = 0;
+	//undo[0] = &Service::adaugareElement(g);
 }
 
 void Service::adaugareElement(const GymExercise& g)

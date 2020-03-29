@@ -49,6 +49,30 @@ void UI::stergereDupa5UI()
 	cout << endl << "Afisare nu avem inca... -_-" << endl;
 }
 
+void UI::updateExercitiu()
+{
+	int serii, reps, kg, pozitie;
+	char nume[20];
+	cout << endl << "Pozitia exercitiului: ";
+	cin >> pozitie;
+	if (pozitie<1 || pozitie>ser.getSize())
+		cout << "Pozitie invalida";
+	else
+	{
+		GymExercise s = ser.elementPozitiaI(pozitie);
+		cout << endl << "Nume exercitiu nou: ";
+		cin >> nume;
+		cout << endl << "Numar de serii nou:";
+		cin >> serii;
+		cout << endl << "Numar of reps nou:";
+		cin >> reps;
+		cout << endl << "Greutate noua:";
+		cin >> kg;
+		cout << endl;
+		ser.updateElement(s, nume, serii, reps, kg);
+	}
+}
+
 UI::~UI()
 {
 

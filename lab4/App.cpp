@@ -33,7 +33,7 @@ int main()
 	cout << "Teste trecute" << endl;
 	while (ok)
 	{
-		cout << "1.Citire 2.Afisare(not working yet) 3.Filtrare dupa x 4.Stergere sub 5 5.Iesire"<<endl;
+		cout << "1.Citire 2.Afisare(not working yet) 3.Update 4.Filtrare dupa x 5.Stergere sub 5 6.Iesire"<<endl;
 		cin >> optiune;
 		if (optiune == 1)
 		{
@@ -47,15 +47,20 @@ int main()
 		}
 		if (optiune == 3)
 		{
-			ui.filtrareDupaXUI();
+			ui.updateExercitiu();
 			continue;
 		}
 		if (optiune == 4)
 		{
-			ui.stergereDupa5UI();
+			ui.filtrareDupaXUI();
 			continue;
 		}
 		if (optiune == 5)
+		{
+			ui.stergereDupa5UI();
+			continue;
+		}
+		if (optiune == 6)
 			ok = 0;
 	}
 	return 0;
